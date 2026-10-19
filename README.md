@@ -14,6 +14,20 @@ Vue 3 · Vite · TypeScript · Pinia · Element Plus · Tailwind v4. Talks to th
 - **Body:** weight chart, BMI on the Asian scale, and 7 days of water
 - Also: workout plan, calorie calculator, Web Push reminders, Google login, email verification, terms and privacy pages, and admin pages for the menu and clips
 
+## Screenshots
+
+![Today page on desktop](.github/screenshots/today-desktop.png)
+
+| Today | Food | Summary |
+|---|---|---|
+| <img src=".github/screenshots/today.png" width="260" alt="Today page"> | <img src=".github/screenshots/food.png" width="260" alt="Food page"> | <img src=".github/screenshots/summary.png" width="260" alt="Summary page"> |
+
+| Skin | Body | Group challenge |
+|---|---|---|
+| <img src=".github/screenshots/skin.png" width="260" alt="Skin routine page"> | <img src=".github/screenshots/body.png" width="260" alt="Body page"> | <img src=".github/screenshots/group.png" width="260" alt="Group challenge board"> |
+
+Taken from the running app with 7 days of sample data.
+
 ## Getting started
 
 ```bash
