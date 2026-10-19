@@ -4,22 +4,6 @@
 
 Vue 3 · Vite · TypeScript · Pinia · Element Plus · Tailwind v4 ทำงานคู่กับ API [`dulaedee-service`](https://github.com/Teruakii/dulaedee-service)
 
-![หน้าวันนี้บนจอคอม](docs/screenshots/today-desktop.png)
-
-## หน้าตาแอป
-
-| วันนี้ | อาหาร | สรุปและเหรียญ |
-|---|---|---|
-| <img src="docs/screenshots/today.png" width="260" alt="หน้าวันนี้: งบแคลอรี่ น้ำ UV"> | <img src="docs/screenshots/food.png" width="260" alt="หน้าอาหาร: กินบ่อย และเมนูพอดีงบ"> | <img src="docs/screenshots/summary.png" width="260" alt="หน้าสรุป: วันต่อเนื่อง และตัวเลข 7 วัน"> |
-| งบแคลอรี่ที่เหลือ สารอาหาร น้ำ UV ผิว ออกกำลัง และวันต่อเนื่อง | กดเพิ่มเมนูที่กินบ่อยหรือ "เหมือนเมื่อวาน" ได้ทันที แนะนำเมนูที่พอดีกับงบที่เหลือ | วันต่อเนื่อง 4 อย่าง ค่าเฉลี่ย 7 หรือ 30 วัน แนวโน้มน้ำหนัก และเหรียญ |
-
-| ผิว | ร่างกาย | ชาเลนจ์กลุ่ม |
-|---|---|---|
-| <img src="docs/screenshots/skin.png" width="260" alt="หน้าผิว: routine เช้า"> | <img src="docs/screenshots/body.png" width="260" alt="หน้าร่างกาย: กราฟน้ำหนัก BMI น้ำ"> | <img src="docs/screenshots/group.png" width="260" alt="กระดานชาเลนจ์กลุ่ม"> |
-| routine เช้าและก่อนนอน เตือนส่วนผสมที่ใช้คู่กันไม่ได้ และ UV ของพรุ่งนี้ | กราฟน้ำหนัก BMI ตามเกณฑ์คนเอเชีย และน้ำ 7 วัน | ชวนเพื่อนด้วยลิงก์ แข่งกันรายสัปดาห์ เห็นกันแค่ชื่อเล่นกับจำนวนวัน |
-
-ภาพทั้งหมดถ่ายจากแอปจริงด้วยข้อมูลตัวอย่าง 7 วัน
-
 ## เริ่มใช้งาน
 
 ```bash
