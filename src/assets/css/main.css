@@ -1,0 +1,154 @@
+@import 'tailwindcss';
+
+/* โทเคนจาก mockup แนว D "ผลไม้สด" (design/mockups/v2/d-pop.html) · view ใช้ชื่อโทเคนเท่านั้น ห้ามใส่ hex */
+@theme {
+  --font-sans: 'Anuphan', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Mitr', 'Anuphan', ui-sans-serif, sans-serif;
+
+  --color-bg: #fff8ee;
+  --color-surface: #ffffff;
+  --color-ink: #2b2340;
+  --color-mute: #7a7090;
+  --color-line: #efe6da;
+
+  /* ผลไม้: สีหลักของการ์ดและปุ่ม */
+  --color-melon: #ff5a7a;
+  --color-mango: #ffb020;
+  --color-lime: #3fb56a;
+  --color-sky: #4db3ff;
+  --color-grape: #8c6cff;
+  /* พาสเทลพื้นการ์ด */
+  --color-peach: #ffe3d3;
+  --color-lemon: #fff1bf;
+  --color-mint: #ddf7e6;
+  --color-ice: #dcf0ff;
+  --color-lilac: #ece6ff;
+  --color-blush: #ffe3ea;
+
+  /* ความหมาย */
+  --color-primary: var(--color-melon);
+  --color-primary-soft: var(--color-blush);
+  --color-water: var(--color-sky);
+  --color-skin: var(--color-grape);
+  --color-protein: var(--color-grape);
+  --color-carb: var(--color-mango);
+  --color-fat: var(--color-melon);
+  --color-yt: #e5383b;
+
+  --animate-bob: bob 3s ease-in-out infinite;
+  --animate-spin-slow: spin 18s linear infinite;
+  --animate-wave: wave 4s linear infinite;
+  --animate-ring: ring-fill 1.2s ease-out both;
+
+  @keyframes bob {
+    0%,
+    100% {
+      transform: translateY(0) rotate(-3deg);
+    }
+    50% {
+      transform: translateY(-6px) rotate(3deg);
+    }
+  }
+  @keyframes wave {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes ring-fill {
+    from {
+      stroke-dashoffset: 264;
+    }
+  }
+}
+
+/* ชิ้นส่วนที่ใช้ซ้ำทุกหน้า */
+@layer components {
+  .card {
+    @apply rounded-[2rem] bg-surface p-5 md:p-6;
+  }
+  /* การ์ดเด้งขึ้นเมื่อชี้ ให้แอปดูมีชีวิต */
+  .lift {
+    @apply transition-transform duration-200 hover:-translate-y-1 hover:-rotate-1;
+  }
+  .btn-ink {
+    @apply rounded-full bg-ink px-5 py-3 font-semibold text-white transition-transform active:scale-95 disabled:opacity-50;
+  }
+  .btn-soft {
+    @apply rounded-full bg-surface px-5 py-3 font-semibold text-ink shadow-[0_4px_0_rgb(43_35_64/0.08)] transition-transform active:scale-95 disabled:opacity-50;
+  }
+  .pill-tabs {
+    @apply flex gap-1 rounded-full bg-surface p-1 text-sm shadow-[0_4px_0_rgb(43_35_64/0.06)];
+  }
+  .pill-tab {
+    @apply flex-1 whitespace-nowrap rounded-full px-4 py-2 text-center text-mute transition-colors;
+  }
+  .pill-tab-active {
+    @apply bg-melon text-white;
+  }
+  .field {
+    @apply mt-1 w-full rounded-2xl border-2 border-line bg-surface px-4 py-3 outline-none transition-colors focus:border-melon;
+  }
+  .chip {
+    @apply shrink-0 rounded-full px-4 py-2 text-sm transition-colors;
+  }
+  .soft-shadow {
+    @apply shadow-[0_6px_0_rgb(43_35_64/0.08)];
+  }
+}
+
+:root {
+  --el-color-primary: #ff5a7a;
+  --el-color-primary-light-3: #ff8ca2;
+  --el-color-primary-light-5: #ffadbd;
+  --el-color-primary-light-7: #ffcdd7;
+  --el-color-primary-light-8: #ffdee4;
+  --el-color-primary-light-9: #ffe3ea;
+  --el-color-primary-dark-2: #e8456a;
+  --el-border-radius-base: 14px;
+  --el-font-family: var(--font-sans);
+  --el-text-color-primary: var(--color-ink);
+  --el-text-color-regular: var(--color-ink);
+  --el-border-color: var(--color-line);
+}
+
+html,
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-ink);
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+}
+
+.el-dialog {
+  border-radius: 28px !important;
+  padding: 24px !important;
+}
+.el-button {
+  border-radius: 999px !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
