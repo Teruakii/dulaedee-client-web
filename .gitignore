@@ -40,3 +40,4 @@ __screenshots__/
 
 # ค่าของเครื่องนี้ ใช้ .env.example เป็นแม่แบบ
 .env
+.vite/
