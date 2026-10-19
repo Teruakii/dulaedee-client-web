@@ -20,22 +20,6 @@ Vue 3 · Vite · TypeScript · Pinia · Element Plus · Tailwind v4 ทำงา
 
 ภาพทั้งหมดถ่ายจากแอปจริงด้วยข้อมูลตัวอย่าง 7 วัน
 
-## ที่มาของดีไซน์
-
-**รอบแรก:** ลองไว้ 3 แนว (สงบ, แบบนิตยสาร, ตัวหนา) ผู้ใช้เลือกแนว A แล้วขยายเป็น 9 หน้า แต่ลองใช้แล้วรู้สึกว่ายังไม่สดใสพอ
-
-| A สงบ | B นิตยสาร | C ตัวหนา |
-|---|---|---|
-| <img src="docs/design/round1-a.png" width="260" alt="แนว A"> | <img src="docs/design/round1-b.png" width="260" alt="แนว B"> | <img src="docs/design/round1-c.png" width="260" alt="แนว C"> |
-
-**รอบสอง:** ทำใหม่อีก 3 แนว แล้วเลือก **D ป๊อป** สีสด การ์ดโค้งมน และมีมาสคอตใบไม้ แอปจริงใช้แนวนี้
-
-| D ป๊อป ✅ | E เควสต์ | F ตลาด |
-|---|---|---|
-| <img src="docs/design/round2-d.png" width="200" alt="แนว D"> | <img src="docs/design/round2-e.png" width="200" alt="แนว E"> | <img src="docs/design/round2-f.png" width="200" alt="แนว F"> |
-
-ข้อความและตัวเลขใน mockup แต่งขึ้นเพื่อวาดเท่านั้น
-
 ## เริ่มใช้งาน
 
 ```bash
